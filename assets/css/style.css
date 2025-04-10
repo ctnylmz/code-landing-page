@@ -458,4 +458,23 @@ main {
             }
         }
     }
+
+    .comment{
+        background-color: var(--bg-light);
+        padding: 78px 0;
+        .comment-wrapper{
+            display: flex;
+            gap: 120px;
+            .description{
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--dark);
+                letter-spacing: -0.5px;
+            }
+            .name{
+                margin-top: 20px;
+            }
+        }
+
+    }
 }
