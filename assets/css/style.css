@@ -214,10 +214,13 @@ main {
     .brand {
         margin-top: 72px;
         background-color: var(--white);
-        padding: 56px 0;
+        padding: 64px 0;
         border-bottom: 2px solid #E6ECF1;
         overflow-x: auto;
-
+        
+        @media (max-width:768px) {
+            margin-top: 32px;
+        }
         
         .brand-wrapper {
             display: flex;
@@ -254,6 +257,10 @@ main {
         padding: 56px 0;
         cursor: pointer;
         overflow-x: auto;
+        @media (max-width:768px) {
+            padding: 32px 0;
+
+        }
 
         .info-wrapper {
             display: flex;
@@ -306,10 +313,10 @@ main {
 
     .advanced {
         background-color: var(--white);
-        padding: 56px 0 130px;
+        padding: 56px  0 130px 0;
 
         @media (max-width:768px) {
-            padding: 64px 0 64px;
+            padding: 64px 0 10px 0px;
         }
 
         .advanced-wrapper {
@@ -463,9 +470,13 @@ main {
     .pricing {
         background-color: var(--bg-light);
         padding: 56px 0;
+        overflow-x: auto;
 
         .pricing-wrapper {
             text-align: center;
+            @media (max-width:768px) {
+                padding-right: 20px;
+            }
 
             .content {
                 .title {
@@ -582,7 +593,7 @@ main {
     .comment {
         background-color: var(--bg-light);
         padding: 78px 0;
-
+        overflow-x: auto;
         .comment-wrapper {
             display: flex;
             gap: 120px;
